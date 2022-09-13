@@ -19,7 +19,7 @@ passForm.addEventListener("submit", (e) => {
 			let result = "";
 
 			if (count >= 1) {
-				result += servNameInputValue.at(count);
+				result += servNameInputValue.at(count - 1);
 			} else {
 				result += servNameInputValue.at(0);
 			}
