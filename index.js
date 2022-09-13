@@ -21,7 +21,7 @@ passForm.addEventListener("submit", (e) => {
 			if (count >= 1) {
 				result += servNameInputValue.at(count);
 			} else {
-				result += servNameInputValue[0];
+				result += servNameInputValue.at(0);
 			}
 
 			return result;
@@ -75,30 +75,20 @@ passForm.addEventListener("submit", (e) => {
 });
 
 function displayCreatedPassword(str) {
-	createdNewPassword = str;
-	// let newPassText = `Your new password`;
-
-	const passDisplay = document.querySelector("ul");
+	const passDisplay = document.querySelector("p");
 	if (passDisplay !== null) {
 		passDisplay.remove();
 	}
 
-	const ul = document.createElement("ul");
-
-	let passHolder = document.createElement("li");
+	let passHolder = document.createElement("p");
 	passHolder.setAttribute("class", "passwordHolder");
-	let passText = document.createTextNode(
-		`Your new password: ${createdNewPassword};`
-	);
+	let passText = document.createTextNode(`Your new password: ${str};`);
+	let divPass = document.createElement("div");
+	passHolder.setAttribute("class", "generated-pass");
 
-	// let text = document.createElement("p");
-	// text.setAttribute("class", "text");
-	// let htmlText = document.createTextNode(newPassText);
+	let divPassHolder = document.querySelector(".app");
 
-	// text.appendChild(htmlText);
 	passHolder.appendChild(passText);
-	// ul.appendChild(text);
-	ul.appendChild(passHolder);
-
-	passForm.appendChild(ul);
+	divPass.appendChild(passHolder);
+	divPassHolder.appendChild(divPass);
 }

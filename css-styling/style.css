@@ -1,30 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap");
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	font-family: "roboto";
+	background-color: #9b5de5;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+}
+
 form {
+	margin: 0 auto;
+	margin-top: 200px;
+	min-width: 800px;
+	min-height: 420px;
 	font-size: 35px;
-	margin-top: 40px;
-	margin-left: 40px;
+	background-color: #f15bb5;
+
+	display: flex;
+	flex-direction: column;
+	border-radius: 15px;
+
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+		rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+		rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .submit-btn {
 	margin: 0 auto;
 	font-size: 25px;
+
+	background: #5e5df0;
+	border-radius: 999px;
+	box-shadow: #5e5df0 0 10px 20px -10px;
+	box-sizing: border-box;
+	color: #ffffff;
+	cursor: pointer;
+	font-family: "roboto";
+	font-weight: 700;
+	/* line-height: 24px; */
+	opacity: 1;
+	outline: 0 solid transparent;
+	padding: 20px 45px;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	width: fit-content;
+	word-break: break-word;
+	border: 0;
+}
+
+form label {
+	font-size: 35px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: -25px;
+	color: #262523;
+}
+
+.basicPassLabel {
+	margin-top: 35px;
 }
 
 form input {
-	margin-top: 5px;
-	margin-bottom: 10px;
-	padding: 5px 60px;
-	font-size: 25px;
+	margin: 0 auto;
+	margin-bottom: -30px;
+	font-size: 32px;
+	padding: 8px 100px;
+	text-align: center;
+	outline: none;
+	border: 5px solid #00bbf9;
+	border-radius: 30px;
+	font-family: "roboto";
+	cursor: pointer;
 }
 
-form ul {
+.generated-pass {
+	margin: 0 auto;
+	margin-top: 100px;
+	min-width: fit-content;
+	min-height: fit-content;
+	padding: 30px 70px;
+	font-size: 35px;
+	background-color: #00bbf9;
+
 	display: flex;
-	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50px;
+	border: 5px solid #7209b7;
 }
 
 .passwordHolder {
-	margin-top: 20px;
-}
-
-.text {
-	margin-top: 20px;
+	margin: 0 auto;
+	color: #262523;
 }
