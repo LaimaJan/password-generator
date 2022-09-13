@@ -93,6 +93,7 @@ form input {
 	align-items: center;
 	border-radius: 50px;
 	border: 5px solid #9b5de5;
+	opacity: 0.75;
 }
 
 .passwordHolder {
